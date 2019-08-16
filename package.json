@@ -1,8 +1,0 @@
-{
-  "workspaces": [
-    "actioncable",
-    "actiontext",
-    "activestorage",
-    "actionview"
-  ]
-}
