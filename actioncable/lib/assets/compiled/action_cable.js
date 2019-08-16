@@ -9,6 +9,7 @@
         INTERNAL: {
           "message_types": {
             "welcome": "welcome",
+            "disconnect": "disconnect",
             "ping": "ping",
             "confirmation": "confirm_subscription",
             "rejection": "reject_subscription"
