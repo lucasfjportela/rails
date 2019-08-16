@@ -89,9 +89,9 @@ class ActionCable.Connection
         when message_types.welcome
           @monitor.recordConnect()
           @subscriptions.reload()
-	when message_types.disconnect
-	  ActionCable.log("Disconnecting...")
-	  ActionCable.log("Reason: ", reason)
+        when message_types.disconnect
+          ActionCable.log("Disconnecting...")
+          ActionCable.log("Reason: ", reason)
           @close(allowReconnect: reconnect)
         when message_types.ping
           @monitor.recordPing()
