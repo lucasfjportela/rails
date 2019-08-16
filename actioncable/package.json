@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "rails/rails"
+    "url": "lucasfjportela/rails"
   },
   "keywords": [
     "websockets",
