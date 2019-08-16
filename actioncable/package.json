@@ -6,10 +6,6 @@
   "files": [
     "lib/assets/compiled/*.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "lucasfjportela/rails"
-  },
   "keywords": [
     "websockets",
     "actioncable",
