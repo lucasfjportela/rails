@@ -1,5 +1,5 @@
 {
-  "name": "@lucasfjportela/actioncable",
+  "name": "rn-action-cable",
   "version": "5.2.4",
   "description": "WebSocket framework for Ruby on Rails.",
   "main": "lib/assets/compiled/action_cable.js",
