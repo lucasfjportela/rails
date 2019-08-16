@@ -84,11 +84,15 @@ class ActionCable.Connection
   events:
     message: (event) ->
       return unless @isProtocolSupported()
-      {identifier, message, type} = JSON.parse(event.data)
+      {identifier, message, reconnect, reason, type} = JSON.parse(event.data)
       switch type
         when message_types.welcome
           @monitor.recordConnect()
           @subscriptions.reload()
+	when message_types.disconnect
+	  ActionCable.log("Disconnecting...")
+	  ActionCable.log("Reason: ", reason)
+          @close(allowReconnect: reconnect)
         when message_types.ping
           @monitor.recordPing()
         when message_types.confirmation
